@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #1155ff;
+  height: 100vh;
+  color: #fff;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.get-coupon {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.input-text {
+  padding: 7px;
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #1155ff;
+  border: solid 1px #fff;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+btn:act p {
+  color: #fff;
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
