@@ -4,14 +4,16 @@ const coupon = document.querySelector(".coupon");
 const copyText = (e) => {
   e.preventDefault();
 
-  coupon.select();
-  coupon.setSelectionRange(0, 9999);
-  document.execCommand("copy");
+  navigator.clipboard.writeText(coupon.value).then(() => {
+    btn.textContent = "Copied!!";
+    setTimeout(() => {
+      btn.textContent = "Copy";
+    }, 3000);
+  });
 
-  btn.textContent = "Copied!!";
-  setTimeout(() => {
-    btn.textContent = "Copy";
-  }, 3000);
+  // coupon.select();
+  // coupon.setSelectionRange(0, 9999);
+  // document.execCommand("copy");
 };
 
 btn.addEventListener("click", copyText);
